@@ -20,7 +20,10 @@
   box-sizing: border-box;
 }
 
-
+h1,h2,h3,h4{
+  padding: 0;
+  margin: 0;
+}
 
 ul {
   list-style: none;
@@ -59,7 +62,7 @@ body {
   justify-content: center;
 }
 
-.align-items{
+.align-items-center{
   align-items: center;
 }
 
@@ -71,6 +74,10 @@ body {
 
 .p-10{
   padding: 10px;
+}
+
+.px-20{
+  padding: 0 20px;
 }
 
 .p-20{
@@ -86,6 +93,18 @@ body {
 .m-10{
   margin: 10px;
 }
+
+.mr-10{
+  margin-right: 10px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
 .m-20{
   margin: 20px;
 }

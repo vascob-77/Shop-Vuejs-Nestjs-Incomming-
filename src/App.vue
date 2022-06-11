@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import HeaderVue from "./components/Header.vue";
-import ShopVue from "./components/Shop.vue";
-import CartVue from "./components/Cart.vue";
+import ShopVue from "./components/Shop/Shop.vue";
+import CartVue from "./components/Cart/Cart.vue";
 import FooterVue from "./components/Footer.vue";
 </script>
 
 <template>
   <div class="app-container">
-    <HeaderVue class="header b1" />
-    <ShopVue class="shop b2" />
-    <CartVue class="cart b3" />
-    <FooterVue class="footer b4" />
+    <HeaderVue class="header" />
+    <!-- <ShopVue class="shop b2" />
+    <CartVue class="cart b3" /> -->
+    <FooterVue class="footer" />
   </div>
 </template>
 
-<style>
+<style lang="scss">
 @import "./assets/base.scss";
 @import "./assets/debug.scss";
 

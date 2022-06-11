@@ -1,0 +1,11 @@
+<script setup lang="ts">
+</script>
+
+
+<template>
+  <div class="mb-10 b5">
+    <h1>cart product</h1>
+  </div>
+</template>
+
+<style lang="scss" scoped></style>
