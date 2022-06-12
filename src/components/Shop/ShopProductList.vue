@@ -1,17 +1,23 @@
+<script setup lang="ts">
+import type { IProduct } from "@/interfaces/product.interface";
+import ShopProduct from "./ShopProduct.vue";
+
+const props = defineProps<{
+  products:IProduct[]
+}>()
+
+const emit = defineEmits<{
+  (e:'addProductInCart',id:number):void;
+}>()
+
+</script>
+
+
 <template>
-  <main class="grid p6@)">
-    <ShopProduct/>
-    <ShopProduct/>
-    <ShopProduct/>
-    <ShopProduct/>
-    <ShopProduct/>
-    <ShopProduct/>
-    <ShopProduct/>
-    <ShopProduct/>
+  <main class="grid p6">
+    <ShopProduct v-for="product in products" :product="product" @addProductInCart="emit('addProductInCart',$event)"/>
   </main>
 </template>
-<script setup lang="ts">
-import ShopProduct from "./ShopProduct.vue";</script>
 
 <style lang="scss" scoped>
   .grid{
