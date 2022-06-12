@@ -8,8 +8,8 @@ import FooterVue from "./components/Footer.vue";
 <template>
   <div class="app-container">
     <HeaderVue class="header" />
-    <!-- <ShopVue class="shop b2" />
-    <CartVue class="cart b3" /> -->
+    <ShopVue class="shop" />
+    <CartVue class="cart" />
     <FooterVue class="footer" />
   </div>
 </template>
@@ -34,6 +34,8 @@ import FooterVue from "./components/Footer.vue";
 }
 .cart {
   grid-area: cart;
+  border-left: var(--border);
+  background-color: #ffffff;
 }
 .footer {
   grid-area: footer;
