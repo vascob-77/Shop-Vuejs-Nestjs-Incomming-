@@ -1,4 +1,4 @@
-export type Category = 'gamer' | 'desktop' | 'streaming' | 'all';
+export type Category = 'caca ?' | 'futur ?' | 'trolling ?' | 'all';
 
 export interface IFilters {
     search:string,
