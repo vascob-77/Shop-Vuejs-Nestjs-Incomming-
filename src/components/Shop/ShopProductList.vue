@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IProduct } from "@/interfaces/product.interface";
+import type { IProduct } from "@/interfaces";
 import ShopProduct from "./ShopProduct.vue";
 
 const props = defineProps<{
@@ -15,7 +15,7 @@ const emit = defineEmits<{
 
 <template>
   <main class="grid p6">
-    <ShopProduct v-for="product in products" :product="product" @addProductInCart="emit('addProductInCart',$event)"/>
+    <ShopProduct v-for="product in products" :product="product" @add-product-in-cart="emit('addProductInCart',$event)"/>
   </main>
 </template>
 

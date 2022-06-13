@@ -4,7 +4,7 @@
   --primary-2:#2ecc71;
   --danger-1:#e74c3c;
   --danger-2:#c0392b;
-  --sucess-1:##27ae60;
+  --success-1:#27ae60;
   --gray-1:#f6f6f6;
   --gray-2:#ddd;
   --text-color:#444;
@@ -37,6 +37,12 @@ img{
 a{
   color: var(--text-color);
   text-decoration: none;
+}
+
+input {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 8px 15px;
 }
 
 body {
@@ -108,6 +114,10 @@ body {
 .m-20{
   margin: 20px;
 }
+
+.mb-20{
+  margin-bottom: 20px;
+}
 .m-30{
   margin: 30px;
 }
@@ -136,3 +146,12 @@ body {
     background-color: var(--danger-2);
   }
 }
+.btn-success{
+  background-color: var(--success-1);
+  color:var(--text-primary-color);
+  &:hover{
+    background-color: var(--success-1);
+  }
+}
+
+

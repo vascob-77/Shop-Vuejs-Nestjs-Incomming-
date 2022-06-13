@@ -1,13 +1,24 @@
 <script setup lang="ts">
+import type { IProductCart } from '@/interfaces';
 
+defineProps<{
+  product:IProductCart
+}>()
+
+const emit = defineEmits<{
+  (e:'removeProductInCart',id:number):void;
+}>()
 </script>
 
 
 <template>
-  <div class="mb-10 p-10 d-flex align-items-center product">
-    <strong class="flex-fill mr-10">Bitcoins</strong>
-    <span class="mr-10">Prix: 35000€</span>
-    <button class="btn btn-danger">Supprimer</button>
+  <div class="mb-10 p-10 d-flex  product flex-column">
+    <strong class="flex-fill mr-10">{{product.title}}</strong>
+    <div class="d-flex flex-column">
+    <span>Quantité: {{product.quantity}}</span>
+    <span class="mr-10">Prix: {{product.price}}€</span>
+    <button class="btn btn-danger" @click="emit('removeProductInCart',product.id)">Supprimer</button>
+    </div>
   </div>
 </template>
 
